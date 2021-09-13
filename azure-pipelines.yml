@@ -7,4 +7,4 @@ parameters:
   type: string
 
 steps:
-- script: echo ${{ eq(variables.numbers, 123) }}
+- script: echo ${{ eq(variables.letters, 'ABC') }}
