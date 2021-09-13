@@ -1,9 +1,9 @@
 parameters:
-- name: 'foo'
-  default: 'abcd'
+- name: 'restoreProjects'
+  default: ''
   type: string
-- name: 'bar'
-  default: 'efgh'
+- name: 'buildProjects'
+  default: ''
   type: string
 
 steps:
