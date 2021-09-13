@@ -1,5 +1,5 @@
 jobs:
-- template: jobs/build.yml
+- template: a.yml
   parameters:
     preBuild:
     - script: echo hello from pre-build
