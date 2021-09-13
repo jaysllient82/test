@@ -1,11 +1,10 @@
-trigger:
-- master
+parameters:
+- name: 'foo'
+  default: 'abcd'
+  type: string
+- name: 'bar'
+  default: 'efgh'
+  type: string
 
-extends:
-  template: start.yml
-  parameters:
-    buildSteps:  
-      - bash: echo Test #Passes
-        displayName: succeed
-      - bash: echo "Test"
-        displayName: succeed
+steps:
+- script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
