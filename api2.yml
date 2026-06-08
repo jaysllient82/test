@@ -1,1 +1,1 @@
-FROM ghcr.io/kedacore/keda:2.4.0
+FROM minio/minio:RELEASE.2024-12-18T13-15-44Z
