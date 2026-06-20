@@ -1,7 +1,2 @@
-jobs:
-- template: a.yml
-  parameters:
-    preBuild:
-    - script: echo hello from pre-build
-    preTest:
-    - script: echo hello from pre-test
+trigger:
+- master
